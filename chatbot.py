@@ -28,7 +28,6 @@ def chat(openai_client: OpenAI, system_prompt: str, system_prompt_embedding: lis
     if float(relevance) < 0.8:
         return "I'm sorry, this isn't a relevant query. Please try again.\n\n Protected by Radiant."
 
-
     response = openai_client.chat.completions.create(
         model="notNeeded",
         messages=[
