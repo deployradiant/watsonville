@@ -29,17 +29,13 @@ if query:
     else:
         st.write("No results found")
 
-# st.sidebar.header("About")
-# st.sidebar.markdown(
-#     """
-#     This is a
-#     This is a demo of a RAG (Retrieval-Augmented Generation) model for Plasma Physics built using the Radiant platform and MongoDB Atlas.
-#     Here is a link to the source code: [GitHub](https://github.com/deployradiant/mongodb-rag-example)
-#
-#
-#     To learn more about Radiant please visit the [Radiant website](https://www.radiantai.com).
-#     To learn more about MongoDB Atlas please visit the [MongoDB Atlas website](https://www.mongodb.com/cloud/atlas).
-#
-#     Email akanekar@radiantai.com for any questions.
-#     """
-# )
+st.sidebar.header("About")
+st.sidebar.markdown(
+    """
+    Recently someone discovered that they could use the Chevrolet support bot to answer any questions, effectively turning it into a proxy for GPT-4. 
+    
+    This is a demo of a chatbot built using the Radiant platform that protects against this kind of abuse.
+    
+    Check out radiant at [https://www.radiantai.com](https://www.radiantai.com).
+    """
+)
