@@ -2,8 +2,6 @@ import streamlit as st
 from openai import OpenAI
 
 from chatbot import chat
-from utils import generate_embedding
-
 
 st.title("Chevrolet of Watsonville")
 
@@ -24,22 +22,6 @@ openai_client = OpenAI(
 )
 
 SYSTEM_PROMPT = "You are a helpful assistant for Chevrolet of Watsonville. You assist customers with their questions about Chevrolet. Be polite and helpful. If you don't know the answer, say you don't know."
-# SYSTEM_PROMPT_EMBEDDING = generate_embedding(openai_client=openai_client, text=SYSTEM_PROMPT)
-
-# query = st.text_input("Enter search query:")
-# if query:
-#     result = chat(
-#         openai_client=openai_client,
-#         system_prompt=SYSTEM_PROMPT,
-#         system_prompt_embedding=SYSTEM_PROMPT_EMBEDDING,
-#         user_query=query,
-#     )
-#
-#     if result:
-#         st.write(result)
-#     else:
-#         st.write("No results found")
-#
 
 # Initialize chat history
 if "messages" not in st.session_state:
